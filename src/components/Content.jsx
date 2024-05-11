@@ -8,6 +8,8 @@ import {useState} from 'react';
 const Content = () => {
   const [word,setWord]=useState('');
   console.log(word);
+
+  // const data;
   // const [result,setResult]=useState(true);
 
 
@@ -26,7 +28,7 @@ const Content = () => {
     try {
       const response = await axios.request(options);
       console.log(response.data);
-      const data=response.data
+      //  data=response.data
     } catch (error) {
       console.error(error);
     }
@@ -209,7 +211,7 @@ const Content = () => {
 </form>
 
  <div className=" result ? mt-[3rem] bg-red-500 w-full h-[30rem]:hidden">
-  {data.map}
+  {/* {data.map} */}
 
 
 
