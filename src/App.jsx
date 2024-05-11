@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import Content from './components/Content'
+// import Content from './components/Content'
 import Header from './components/header'
+import MainPage from './components/MainPage'
+
 import './App.css'
 
 function App() {
@@ -10,7 +12,8 @@ function App() {
 <div className="className=bg-[#DBFDC8] flex flex-col items-center space-y-[6rem]">
 
 <Header/>
-<Content/>
+<MainPage/>
+{/* <Content/> */}
 
 </div>
       </>
