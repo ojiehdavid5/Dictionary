@@ -6,11 +6,11 @@ const MainPage = () => {
     const [word,setWord]=useState("");
     console.log(word);
 
-    const [result,setResult]=useState([]);
-    console.log(result);
+    const [list,setList]=useState([]);
+    console.log(list);
 
 
-    // { result.map((item)=>console.log(item.author))}
+    { list.map((item)=>console.log(item.author))}
 
 
     const HandleSubmit= async(e)=>{
@@ -29,7 +29,7 @@ const MainPage = () => {
           try {
               const response = await axios.request(options);
             //   console.log(response.data);
-              setResult(response.data);
+              setList(response.data);
           } catch (error) {
               console.error(error);
           }
