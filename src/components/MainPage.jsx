@@ -64,7 +64,7 @@ const MainPage = () => {
 
 <div className="w-full h-full bg-red-600">
     
-    {  list.length === 0 ? list.map((item)=>(
+    {  list.length !== 0 ? list.map((item)=>(
         <ul>
             <li>{item.author}</li>
         </ul>
