@@ -4,16 +4,10 @@ import {useState} from 'react'
 
 const MainPage = () => {
     const [word,setWord]=useState("");
-    console.log(word);
+    // console.log(word);
 
-    const [list,setList]=useState([]);
-    console.log(list);
-
-    const numbers = [1, 2, 3, 4, 5];
-const doubledNumbers = numbers.map((num) => num * 2);
-
-console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
-
+    const [lists,setLists]=useState([]);
+    console.log(lists);
 
 
 
@@ -32,9 +26,13 @@ console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
           
           try {
               const response = await axios.request(options);
-              console.log(response.data);
+            //   console.log(response.data);
+
+              const datas= [response.data];
+
+              datas.map(data=>console.log(data.list.map(thing=>thing.definition)))
             
-              setList(response.data);
+            //   setLists(response.data);
           } catch (error) {
               console.error(error);
           }
@@ -69,15 +67,19 @@ console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
 
 <div className="w-full h-full bg-red-600">
     
-    {  list.map((item)=>(
-        <ul>
-            <li>{item.author}</li>
+{/* {
+    lists.map(action=>action.list.map(thing=>(
+        <h1>{thing.author}</h1>
+    )))
+}
+ */}
 
-        </ul>
-    ))}
+ {/* {
 
+                  lists.map(data=>console.log(data.list.map(thing=>
+                    <h1 className='text-5xl'>{thing.author}</h1>)))
 
-
+ } */}
 
 </div> 
 
