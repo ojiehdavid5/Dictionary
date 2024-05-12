@@ -67,6 +67,7 @@ const MainPage = () => {
     {  list.length !== 0 ? list.map((item)=>(
         <ul>
             <li>{item.author}</li>
+            
         </ul>
     )) : <h1>Bad network</h1>}
 
