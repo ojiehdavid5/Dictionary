@@ -35,6 +35,7 @@ const MainPage = () => {
             //   setLists(response.data);
           } catch (error) {
               console.error(error);
+              
           }
   
           
