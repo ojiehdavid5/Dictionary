@@ -32,7 +32,7 @@ const MainPage = () => {
 
               // datas.map(data=>console.log(data.list.map(thing=>thing.definition)))
             
-              setLists(response.data);
+              setLists([response.data]);
           } catch (error) {
               console.error(error);
               
@@ -66,10 +66,20 @@ const MainPage = () => {
 
 
 
-<div className="w-full h-full bg-red-600">
-    {lists.map(data=>data.lis.map(thing=>(
-      <h1>{thing.definition}</h1>
-    )))}
+<div className="w-full h-full ">
+    {lists.map(data=>data.list.map(thing=>
+<>
+<h1 className='space-y-20 mb-10 mt-10'>{thing.word}</h1>
+      <h1 className='space-y-9 mt-10'>{thing.definition}</h1>
+      <h1 className='space-y-9 mt-10'>{thing.example}</h1>
+
+
+
+</>
+
+
+
+    ))}
 
 </div> 
 
