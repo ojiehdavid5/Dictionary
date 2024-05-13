@@ -28,11 +28,11 @@ const MainPage = () => {
               const response = await axios.request(options);
             //   console.log(response.data);
 
-              const datas= [response.data];
+              // const datas= [response.data];
 
-              datas.map(data=>console.log(data.list.map(thing=>thing.definition)))
+              // datas.map(data=>console.log(data.list.map(thing=>thing.definition)))
             
-            //   setLists(response.data);
+              setLists(response.data);
           } catch (error) {
               console.error(error);
               
@@ -67,20 +67,9 @@ const MainPage = () => {
 
 
 <div className="w-full h-full bg-red-600">
-    
-{/* {
-    lists.map(action=>action.list.map(thing=>(
-        <h1>{thing.author}</h1>
-    )))
-}
- */}
-
- {/* {
-
-                  lists.map(data=>console.log(data.list.map(thing=>
-                    <h1 className='text-5xl'>{thing.author}</h1>)))
-
- } */}
+    {lists.map(data=>data.lis.map(thing=>(
+      <h1>{thing.definition}</h1>
+    )))}
 
 </div> 
 
