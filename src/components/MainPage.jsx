@@ -9,6 +9,8 @@ const MainPage = () => {
     const [lists,setLists]=useState([]);
     console.log(lists);
 
+    
+
 
 
     const HandleSubmit= async(e)=>{
