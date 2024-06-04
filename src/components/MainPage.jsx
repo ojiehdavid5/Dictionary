@@ -71,8 +71,9 @@ const MainPage = () => {
 <div className="w-full h-full ">
     {lists.map(data=>data.list.map(thing=>
 <>
-<h1 className='space-y-20 mb-10 mt-10'>{thing.word}</h1>
-      <h1 className='space-y-9 mt-10'>{thing.definition}</h1>
+<h1 className='space-y-20 mb-10 mt-10 text-2xl font-bold'>{thing.word}</h1>
+      <h1 className='space-y-9 mt-10 '>{thing.definition}</h1>
+      <h1>Example</h1>
       <h1 className='space-y-9 mt-10'>{thing.example}</h1>
 
 
