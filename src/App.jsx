@@ -18,9 +18,9 @@ function App() {
     <>
 <div className="className=bg-[#DBFDC8] flex flex-col items-center space-y-[6rem]">
 
-{/* <Header/> */}
+ <Header/> 
 <MainPage/>
-{/* <Content/> */}
+{<Content/> 
 
 </div>
       </>
