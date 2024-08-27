@@ -16,6 +16,7 @@ const MainPage = () => {
     const HandleSubmit= async(e)=>{
         e.preventDefault();
 
+
         const options = {
             method: 'GET',
             url: 'https://urban-dictionary7.p.rapidapi.com/v0/define',
