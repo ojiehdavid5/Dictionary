@@ -16,6 +16,8 @@ Currently, two official plugins are available:
 #D6B9FC
 #FFFFFF
 rgba(255, 255, 255, 0.8)
+
+
 #F9F9F9
 #000000
 rgba(0, 0, 0, 0.18)
