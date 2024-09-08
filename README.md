@@ -15,6 +15,9 @@ Currently, two official plugins are available:
 #E5E7EB
 #D6B9FC
 #FFFFFF
+
+
+
 rgba(255, 255, 255, 0.8)
 
 
