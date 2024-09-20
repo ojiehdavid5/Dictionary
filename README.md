@@ -14,6 +14,8 @@ Currently, two official plugins are available:
 #0D1F23
 #E5E7EB
 #D6B9FC
+
+
 #FFFFFF
 
 
